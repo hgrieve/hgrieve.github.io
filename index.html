@@ -1,8 +1,30 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: harrison grieve | 2013 
 ---
 
-<div id="home">
-  <h3>hgrieve blog</h3>
+{% for post in site.posts limit:1 %}
+<div class="featured">
+	<a href="{{ post.url }}" class="post-title prim">{{ post.title }}</a>
+	{{ post.excerpt }}
+</div>
+{% endfor %}
+<div class="row">
+	<ul class="thumbnails">
+		<li class="span4">
+			<a href="#" class="thumbnail">
+				<img src="http://placehold.it/300x200" alt="">
+			</a>
+		</li>
+		<li class="span4">
+			<a href="#" class="thumbnail">
+				<img src="http://placehold.it/300x200" alt="">
+			</a>
+		</li>
+		<li class="span4">
+			<a href="#" class="thumbnail">
+				<img src="http://placehold.it/300x200" alt="">
+			</a>
+		</li>
+	</ul>
 </div>

@@ -22,20 +22,15 @@
 <body>
   <div class="container">
     <div class="row">
-      <header class="span12">
-        <h2 class="logo">hgrieve</h2>
+      <header>
+        <div class="span2">
+          <a href="#" class="logo">hgrieve</a>
+        </div>
       </header>
     </div>
     <div class="colour-bar"></div>
     <div class="row">
-      <section class="content span12">
-        {% for post in site.posts limit:1 %}
-        <div class="featured">
-          <a href="{{ post.url }}" class="post-title prim">{{ post.title }}</a>
-          {{ post.excerpt }}
-        </div>
-        {% endfor %}
-      </section>
+      <section class="content span12">{{ content }}</section>
     </div>
   </div>
 </body>
