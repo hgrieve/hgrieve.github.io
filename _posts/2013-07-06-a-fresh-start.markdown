@@ -2,7 +2,9 @@
 layout: post
 title:  "A fresh start."
 date:   2013-07-06 12:40:39
-categories: news
+tags: 
+- jekyll
+- code
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

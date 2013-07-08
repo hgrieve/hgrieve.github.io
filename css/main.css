@@ -1,6 +1,7 @@
 /* Ambiguous Styles & Colours */
 h1,h2,h3,h4,h5,h6 {
 	font-family: "franklin-gothic-urw", sans-serif;
+	font-weight: 100;
 }
 
 body p {
@@ -55,6 +56,10 @@ nav ul li {
 	color: #AAAAAA;
 }
 
+.logo:hover {
+	color: #C14678;
+}
+
 .black {
 	background: black;
 }	
@@ -87,6 +92,34 @@ nav ul li {
 	font-weight: 100;
 	line-height: 1.5em;
 	color: rgba(30, 0, 30, .5);
+}
+
+.post p {
+	font-size: 1.2em;
+	font-weight: 100;
+	line-height: 1.3em;
+	color: rgba(30, 0, 30);
+}
+
+.date {
+	margin: 10px 0px;
+}
+
+/* sidebar styles */
+
+.sidebar {
+	color: #bbb;
+}
+
+/* tag list styles */
+
+ul.tag-list {
+	list-style: none;
+}
+
+li.tag a {
+	margin-left: 14px;
+	color: #DDD;
 }
 
 /* large navigation icons */
