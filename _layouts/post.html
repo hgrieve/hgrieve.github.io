@@ -1,9 +1,12 @@
 ---
 layout: default
 ---
-
 <div class="row">
-	<div class="span2 sidebar">
+	<p class="hg-breadcrumb"><a href="">archive</a> / </p>
+</div>
+<div class="row">
+	<div class="span4 sidebar">
+		<h4 class="prim post-title">{{ page.title }}</h4>
 		<p class="meta date">{{ page.date | date_to_string }}</p>
 		<ul class="tag-list">
 			{% for post in site.posts %}
@@ -13,8 +16,7 @@ layout: default
 			{% endfor %}
 		</ul>
 	</div>
-	<div class="span9 offset1">
-		<h2 class="prim post-title">{{ page.title }}</h2>
+	<div class="span8">
 		<div class="post">{{ content }}</div>
 	</div>
 </div>

@@ -4,12 +4,18 @@ h1,h2,h3,h4,h5,h6 {
 	font-weight: 100;
 }
 
-body p {
+body p,a {
 	font-family: "ratio", sans-serif;
+	color: #777;
 }
 
-a {
+a,a:hover {
 	text-decoration: none;
+	-webkit-transition: color 0.5s;
+}
+
+a:hover {
+	-webkit-transition: color 0.5s;
 }
 
 /* layout:default */
@@ -32,9 +38,25 @@ header {
 
 footer {
 	background: none;
+	margin: 40px 0 0 0;
 	padding: 10px 0 0 0;
 	border-top: 1px solid #CCC;
+	color: #bac1c8;
+}
+
+footer p {
+	color: inherit;
 	font-weight: 100;
+	margin: 0;
+}
+
+footer a {
+	color: inherit;
+	font-weight: bold;
+}
+
+footer a:hover {
+	color: #C14678;
 }
 
 nav ul {
@@ -61,7 +83,7 @@ nav ul li {
 
 .logo {
 	font-size: 2.3em;
-	color: #AAAAAA;
+	color: #bac1c8;
 }
 
 .logo:hover {
@@ -99,22 +121,35 @@ nav ul li {
 	font-size: 1.5em;
 	font-weight: 100;
 	line-height: 1.5em;
-	color: rgba(30, 0, 30, .5);
+}
+
+.post {
+	padding-top: 12px;
 }
 
 .post p {
 	font-size: 1.2em;
 	font-weight: 100;
 	line-height: 1.3em;
-	color: rgba(30, 0, 30);
 }
 
 .post-title {
 	margin: 0 0 10px 0;
 }
 
-.date {
-	margin: 10px 0px;
+/* breadcrumb styles */ 
+
+.hg-breadcrumb {
+	margin: 0;
+	color: #DDD;
+}
+
+.hg-breadcrumb a {
+	color: #BBB;
+}
+
+.hg-breadcrumb a:hover {
+	color: #C14678;
 }
 
 /* sidebar styles */
