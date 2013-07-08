@@ -102,7 +102,7 @@ nav ul li {
 }
 
 .post-title {
-	margin-bottom: 10px;
+	margin: 0 0 10px 0;
 }
 
 .date {
@@ -119,12 +119,16 @@ nav ul li {
 /* tag list styles */
 
 ul.tag-list {
+	margin: 0;
 	list-style: none;
 }
 
 li.tag a {
-	margin-left: 14px;
 	color: #DDD;
+}
+
+li.tag a:hover {
+	color: #C14678;
 }
 
 /* large navigation icons */
