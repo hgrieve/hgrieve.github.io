@@ -101,6 +101,10 @@ nav ul li {
 	color: rgba(30, 0, 30);
 }
 
+.post-title {
+	margin-bottom: 10px;
+}
+
 .date {
 	margin: 10px 0px;
 }
@@ -109,6 +113,7 @@ nav ul li {
 
 .sidebar {
 	color: #bbb;
+	margin: 0;
 }
 
 /* tag list styles */
